@@ -1,9 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  // Di development: pakai proxy Vite (/api → localhost:3000)
-  // Di production: pakai VITE_API_URL dari env (Railway/Render URL)
-  baseURL: "https://backend-production-9782.up.railway.app/api",
+  baseURL: import.meta.env.VITE_API_URL || '/api',
   timeout: 15000,
   headers: { 'Content-Type': 'application/json' },
 })
