@@ -1,5 +1,8 @@
 import axios from 'axios'
 
+
+// jangan lupa di hapus console.log ini ya, ini buat ngecek baseURL nya udah bener apa belum
+console.log(api.defaults.baseURL)
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || '/api',
   timeout: 15000,
