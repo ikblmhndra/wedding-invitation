@@ -7,3 +7,6 @@ import 'vue3-toastify/dist/index.css'
 const app = createApp(App)
 app.use(router)
 app.mount('#app')
+
+// Debug: cek baseURL yang dipakai
+console.log(api.defaults.baseURL)
