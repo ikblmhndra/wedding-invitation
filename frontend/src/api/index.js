@@ -3,7 +3,7 @@ import axios from 'axios'
 const api = axios.create({
   // Di development: pakai proxy Vite (/api → localhost:3000)
   // Di production: pakai VITE_API_URL dari env (Railway/Render URL)
-  baseURL: import.meta.env.VITE_API_URL || '/api',
+  baseURL: import.meta.env.VITE_API_URL,
   timeout: 15000,
   headers: { 'Content-Type': 'application/json' },
 })
